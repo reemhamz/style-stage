@@ -1,0 +1,259 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  .container:nth-of-type(1) {
+    align-self: flex-end;
+    display: flex;
+    border-radius: 5px;
+    width: 80%;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: $white;
+    padding: 20px;
+    color: $indigoDye;
+    h2 {
+      margin-bottom: 20px;
+      padding: 20px 0;
+      text-align: center;
+      text-decoration: underline;
+      position: relative;
+      display: inline-block;
+      &:before {
+        content: " ";
+        background-image: url(assets/lantern-icon.png);
+        background-size: cover;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 30px;
+        top: 0;
+        display: inline-block;
+      }
+      &:after {
+        content: " ";
+        background-image: url(assets/lantern-icon.png);
+        background-size: cover;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: 30px;
+        top: 0;
+        display: inline-block;
+      }
+    }
+    a {
+      color: $indianYellow;
+      &:hover {
+        color: $cyan;
+      }
+    }
+  }
+  blockquote {
+    margin: 30px auto;
+    border: 3px dashed $redGate;
+    padding: 10px;
+    p {
+      strong {
+        display: block;
+        font-size: 2.5rem;
+        font-family: $merienda;
+      }
+    }
+  }
+  .container:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-left: 20px;
+    align-self: flex-start;
+    background-color: $white;
+    width: 80%;
+    padding: 20px;
+    color: $indigoDye;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 20px 0;
+      text-decoration: underline;
+      position: relative;
+      display: inline-block;
+
+      &:before {
+        content: " ";
+        background-image: url(assets/lantern-icon-2.png);
+        background-size: cover;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        display: inline-block;
+      }
+      &:after {
+        content: " ";
+        background-image: url(assets/lantern-icon-2.png);
+        background-size: cover;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        right: -10px;
+        top: 0;
+        display: inline-block;
+      }
+    }
+    p:nth-of-type(2) {
+      color: $redGate;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2.5rem;
+    }
+    ul {
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 20px;
+      li {
+        display: inline-block;
+        padding: 5px;
+        margin: 5px;
+        border: 3px dashed $indianYellow;
+        color: $indianYellow;
+        background-color: $indigoDye;
+      }
+    }
+    a {
+      color: $indianYellow;
+      &:hover {
+        color: $cyan;
+      }
+    }
+  }
+}
+
+#guidelines {
+  margin-top: 100px;
+  background-color: $white;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+  &:before {
+    content: " ";
+    min-height: 100%;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $redGate;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .container {
+    margin-left: 50px;
+    color: $indigoDye;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      padding: 20px 0;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+    h3 {
+      display: inline-block;
+      text-align: center;
+      transform: rotate(-10deg);
+      letter-spacing: 8px;
+      position: relative;
+      margin-bottom: 20px;
+      &:before {
+        content: "TL;DR";
+        position: absolute;
+        left: 30px;
+        top: -20px;
+        transform: rotate(20deg);
+      }
+      &:after {
+        content: "TL;DR";
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        transform: rotate(30deg);
+      }
+    }
+
+    a {
+      color: $indianYellow;
+      &:hover {
+        color: $cyan;
+      }
+    }
+    .link-guidelines {
+      align-self: center;
+      background-color: $indianYellow;
+      padding: 10px;
+      color: $indigoDye;
+      border: 3px dashed $indigoDye;
+      transition: 0.3s ease;
+      &:hover {
+        background-color: $indigoDye;
+        color: $indianYellow;
+        border: 3px dashed $indianYellow;
+      }
+    }
+  }
+}
+
+#contribute {
+  margin-top: 100px;
+  background-color: $white;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+  &:before {
+    content: " ";
+    min-height: 100%;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $indianYellow;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .container {
+    margin-left: 50px;
+    color: $indigoDye;
+    h2 {
+      padding: 20px 0;
+      color: $indianYellow;
+    }
+    h3 {
+      color: $indianYellow;
+    }
+    p {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+#files {
+  padding-bottom: 20px;
+  .container {
+    h3 {
+      margin-bottom: 20px;
+    }
+    a {
+      align-self: center;
+      background-color: $indigoDye;
+      padding: 10px;
+      color: $indianYellow;
+      border: 3px dashed $indianYellow;
+      transition: 0.3s ease;
+      &:hover {
+        background-color: $redGate;
+        color: $indigoDye;
+        border: 3px dashed $indigoDye;
+      }
+    }
+  }
+}

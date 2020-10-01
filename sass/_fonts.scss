@@ -1,1 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Forum&family=Kaushan+Script&family=Merienda:wght@400;700&display=swap");
+
+$kaushanScript: "Kaushan Script", cursive;
+$berkshireSwash: "Berkshire Swash", cursive;
+$merienda: "Merienda", cursive;
+$forum: "Forum", cursive;
+
+h1 {
+  font-family: $kaushanScript;
+  font-size: 11rem;
+  color: $indigoDye;
+  z-index: 10;
+}
+
+h2 {
+  font-family: $merienda;
+  color: $redGate;
+  font-size: 3rem;
+}
+
+h3 {
+    font-family: $merienda;
+    font-size: 2.5rem;
+    color: $cyan;
+    -webkit-text-stroke: 0.5px $indigoDye;
+}
+
+p,
+a,
+li {
+  font-family: $forum;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s ease;
+  color: $indianYellow;
+  &:hover {
+      color: $redGate;
+  }
+}
